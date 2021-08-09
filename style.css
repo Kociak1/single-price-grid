@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*,
+*::after,
+*::before,
+pre {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /*### Primary*/
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /*### Neutral*/
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  padding: 5rem 2rem;
+  background-color: var(--Light-Gray);
+  color: var(--Grayish-Blue);
+  height: 100vh;
+}
+main {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+header,
+section,
+footer {
+  padding: 1.3rem;
+}
+header {
+  background-color: white;
+}
+h3,
+h4 {
+  padding: 1rem 0;
+}
+header p {
+  padding: 1rem 0;
+}
+section {
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+}
+footer {
+  background-color: hsl(179, 62%, 53%);
+  color: white;
+}
+h3 {
+  color: var(--Cyan);
+}
+header h4 {
+  color: var(--Bright-Yellow);
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.sp1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sp2 {
+  color: hsla(203, 44%, 93%, 0.719);
+}
+section p {
+  padding: 0.6rem 0;
+}
+button {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  margin: 0.7rem 0;
+  border-radius: 0.5rem;
+  background-color: var(--Bright-Yellow);
+  outline: none;
+  border: none;
+  color: var(--Light-Gray);
+  font-weight: bold;
+  box-shadow: 0 1px 10px hsla(179, 62%, 33%, 0.623);
+}
+footer p {
+  color: hsla(203, 44%, 93%, 0.719);
+}
+@media (min-width: 1440px) {
+  body {
+    font-size: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 460px 460px;
+    width: 920px;
+  }
+  header {
+    grid-area: 1 /1 / 1 / -1;
+    max-width: 45ch;
+  }
+  header p {
+    line-height: 2rem;
+  }
+  header,
+  section,
+  footer {
+    padding: 3rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  button {
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+  }
+}
